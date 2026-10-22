@@ -1,0 +1,32 @@
+# 运行产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地工作目录与临时文件
+.deepworks/
+*.tmp
+*.log
+*.err
+
+# 原始雷达采集：体积大，且属不含图像的人体运动数据，不入库
+*.bin
+!radar-pointcloud/sample-synthetic.bin
+
+# 本地标定与底噪基线（随场地/人员变化，需现场重新标定）
+radar-pointcloud/bg_baseline.json
+radar-pointcloud/bg_baseline.json.tmp
+
+# 企业保密材料与课程内部资料
+*.lic
+*.zip
+uploads/
+ONELAB*/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
